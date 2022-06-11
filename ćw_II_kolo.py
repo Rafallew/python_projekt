@@ -18,23 +18,23 @@ import matplotlib.pyplot as plt
 
 # zadanie 2
 #
-# df = pd.read_csv('flags.csv', header=0, sep=';', decimal='.')
-# print(df)
-# #wyświetla niepowtarzające sie wartości z kolumny Zone
-# print(df['Zone'].unique())
-# #a)
-#
-# #kraje znajdujace sie w polnocnej czesci ziemi.
-# Polnocna_czesci=(df['Zone'].isin(["NE", "NW"]))
-# print(Polnocna_czesci)
-#
-# #grupowanie w landmass  i ssumowanie w area   sum area (np. africa 27728
-#
-# sumaArea = (df.groupby("Landmass").agg({'Area':['sum']}))
-# print(sumaArea)
-# sumaArea.plot
-# y = np.array(sumaArea)
-# plt.pie(y)
+df = pd.read_csv('flags.csv', header=0, sep=';', decimal='.')
+print(df)
+#wyświetla niepowtarzające sie wartości z kolumny Zone
+print(df['Zone'].unique())
+#a)
+
+#kraje znajdujace sie w polnocnej czesci ziemi.
+df1 = df[(df['Zone'] == 'NE') | (df['Zone'] == 'NW')]
+
+#grupowanie w landmass  i ssumowanie w area   sum area (np. africa 27728
+
+sumaArea = (df1.groupby("Landmass").agg({'Area':['sum']}))
+print(sumaArea)
+sumaArea.plot(kind='pie', subplots=True)
+plt.title('Podział powierzchni kontynentów')
+plt.legend()
+plt.show()
 
 # plt.pie(x=sumaArea, labels=)
 
