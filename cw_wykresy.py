@@ -20,6 +20,7 @@ df = pd.read_csv('flags.csv', header=0, sep=';')
 
 df1 = df[(df['Zone'] == 'NE') | (df['Zone'] == 'NW')]
 
+
 grouped = df1.groupby('Landmass').agg({'Area': ['sum']})
 
 grouped.plot(kind='pie', subplots=True)#, autopct='%.2f %%', fontsize=14)

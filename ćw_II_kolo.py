@@ -29,6 +29,7 @@ df1 = df[(df['Zone'] == 'NE') | (df['Zone'] == 'NW')]
 
 #grupowanie w landmass  i ssumowanie w area   sum area (np. africa 27728
 
+
 sumaArea = (df1.groupby("Landmass").agg({'Area':['sum']}))
 print(sumaArea)
 sumaArea.plot(kind='pie', subplots=True)
