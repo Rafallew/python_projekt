@@ -112,9 +112,9 @@ def zadanie6():
     plt.title("Procentowy udział kwot zamówień sprzedawców")
     plt.show()
 if __name__ == '__main__':
-    # zadanie1()
+    # zadanie1()      #wykres funkcji fx = 1/x dla x[1,20]
     # zadanie2()
-    zadanie3()
-    ## zadanie4()
-    # zadanie5()
-    # zadanie6()
+    # zadanie3()      #wykres sinx cosx
+    # zadanie4()      #error
+    # zadanie5()      #3 wykresy słupkowy liniowy
+    zadanie6()          # wykres kołowy

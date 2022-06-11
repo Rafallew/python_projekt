@@ -197,12 +197,12 @@ def zadanie8():
 
 
 if __name__ == '__main__':
-    # zadanie1()
-     # zadanie2()
+    # zadanie1()     #liniowy ponkt
+    #  zadanie2()
     # zadanie3()
-    zadanie4()
-    # zadanie5()
+    # zadanie4()      #liniowy
+    # zadanie5()      # wykres sinx       cosx
     # zadanie6()
     # zadanie7()
-    # zadanie8()
-    # zadanie9()
+    zadanie8()      #wykres słupkowy
+    # zadanie9()          #error

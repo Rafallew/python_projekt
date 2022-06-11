@@ -18,18 +18,25 @@ import matplotlib.pyplot as plt
 
 # zadanie 2
 #
-df = pd.read_csv('flags.csv', header=0, sep=';', decimal='.')
-print(df)
+# df = pd.read_csv('flags.csv', header=0, sep=';', decimal='.')
+# print(df)
+# #wyświetla niepowtarzające sie wartości z kolumny Zone
+# print(df['Zone'].unique())
+# #a)
+#
+# #kraje znajdujace sie w polnocnej czesci ziemi.
+# Polnocna_czesci=(df['Zone'].isin(["NE", "NW"]))
+# print(Polnocna_czesci)
+#
+# #grupowanie w landmass  i ssumowanie w area   sum area (np. africa 27728
+#
+# sumaArea = (df.groupby("Landmass").agg({'Area':['sum']}))
+# print(sumaArea)
+# sumaArea.plot
+# y = np.array(sumaArea)
+# plt.pie(y)
 
-print(df['Zone'].unique())#wyświetla niepowtarzające sie wartości z kolumny Zone
-#a)
-Polnocna_czesci=(df['Zone'].isin(["NE", "NW"]))#kraje znajdujace sie w polnocnej czesci ziemi
-print(Polnocna_czesci)
-print(df.groupby())
-# df.sort_values(by='Zone', inplace=True)
-# grupa = df.groupby('Zone')
-# print(grupa.get_group('N'))
-
+# plt.pie(x=sumaArea, labels=)
 
 #zadanie 3
 
@@ -48,3 +55,6 @@ print(df.groupby())
 
 
 # plt.show()
+
+
+
