@@ -198,11 +198,11 @@ def zadanie8():
 
 if __name__ == '__main__':
     # zadanie1()
-     zadanie2()
+     # zadanie2()
     # zadanie3()
-    # zadanie4()
+    zadanie4()
     # zadanie5()
     # zadanie6()
-    #zadanie7()
-    #zadanie8()
-    #zadanie9()
+    # zadanie7()
+    # zadanie8()
+    # zadanie9()

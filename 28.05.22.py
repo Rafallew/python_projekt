@@ -112,9 +112,9 @@ def zadanie6():
     plt.title("Procentowy udział kwot zamówień sprzedawców")
     plt.show()
 if __name__ == '__main__':
-    zadanie1()
+    # zadanie1()
     # zadanie2()
-    # zadanie3()
-    # zadanie4()
+    zadanie3()
+    ## zadanie4()
     # zadanie5()
     # zadanie6()
